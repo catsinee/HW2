@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C62DB7E196138B90068AAF2 /* statusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C62DB7C196138B90068AAF2 /* statusViewController.m */; };
+		8C62DB7F196138B90068AAF2 /* statusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C62DB7D196138B90068AAF2 /* statusViewController.xib */; };
 		8CA9E2D6195E52B800930C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9E2D5195E52B800930C09 /* Foundation.framework */; };
 		8CA9E2D8195E52B800930C09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9E2D7195E52B800930C09 /* CoreGraphics.framework */; };
 		8CA9E2DA195E52B800930C09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9E2D9195E52B800930C09 /* UIKit.framework */; };
@@ -22,6 +24,10 @@
 		8CA9E2F7195E52B800930C09 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9E2DB195E52B800930C09 /* CoreData.framework */; };
 		8CA9E2FF195E52B800930C09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CA9E2FD195E52B800930C09 /* InfoPlist.strings */; };
 		8CA9E301195E52B800930C09 /* HW2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9E300195E52B800930C09 /* HW2Tests.m */; };
+		8CA9E30D195E52E900930C09 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9E30B195E52E900930C09 /* MainViewController.m */; };
+		8CA9E30E195E52E900930C09 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA9E30C195E52E900930C09 /* MainViewController.xib */; };
+		8CA9E312195E58AD00930C09 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9E310195E58AD00930C09 /* FeedViewController.m */; };
+		8CA9E313195E58AD00930C09 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA9E311195E58AD00930C09 /* FeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C62DB7B196138B90068AAF2 /* statusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statusViewController.h; sourceTree = "<group>"; };
+		8C62DB7C196138B90068AAF2 /* statusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = statusViewController.m; sourceTree = "<group>"; };
+		8C62DB7D196138B90068AAF2 /* statusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = statusViewController.xib; sourceTree = "<group>"; };
 		8CA9E2D2195E52B800930C09 /* HW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA9E2D5195E52B800930C09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CA9E2D7195E52B800930C09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +62,12 @@
 		8CA9E2FC195E52B800930C09 /* HW2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HW2Tests-Info.plist"; sourceTree = "<group>"; };
 		8CA9E2FE195E52B800930C09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8CA9E300195E52B800930C09 /* HW2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW2Tests.m; sourceTree = "<group>"; };
+		8CA9E30A195E52E900930C09 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8CA9E30B195E52E900930C09 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8CA9E30C195E52E900930C09 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8CA9E30F195E58AD00930C09 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		8CA9E310195E58AD00930C09 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		8CA9E311195E58AD00930C09 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +135,15 @@
 				8CA9E2EC195E52B800930C09 /* Images.xcassets */,
 				8CA9E2E9195E52B800930C09 /* HW2.xcdatamodeld */,
 				8CA9E2DE195E52B800930C09 /* Supporting Files */,
+				8CA9E30A195E52E900930C09 /* MainViewController.h */,
+				8CA9E30B195E52E900930C09 /* MainViewController.m */,
+				8CA9E30C195E52E900930C09 /* MainViewController.xib */,
+				8CA9E30F195E58AD00930C09 /* FeedViewController.h */,
+				8CA9E310195E58AD00930C09 /* FeedViewController.m */,
+				8CA9E311195E58AD00930C09 /* FeedViewController.xib */,
+				8C62DB7B196138B90068AAF2 /* statusViewController.h */,
+				8C62DB7C196138B90068AAF2 /* statusViewController.m */,
+				8C62DB7D196138B90068AAF2 /* statusViewController.xib */,
 			);
 			path = HW2;
 			sourceTree = "<group>";
@@ -229,6 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA9E2E2195E52B800930C09 /* InfoPlist.strings in Resources */,
+				8C62DB7F196138B90068AAF2 /* statusViewController.xib in Resources */,
+				8CA9E30E195E52E900930C09 /* MainViewController.xib in Resources */,
+				8CA9E313195E58AD00930C09 /* FeedViewController.xib in Resources */,
 				8CA9E2ED195E52B800930C09 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA9E2EB195E52B800930C09 /* HW2.xcdatamodeld in Sources */,
+				8CA9E312195E58AD00930C09 /* FeedViewController.m in Sources */,
 				8CA9E2E8195E52B800930C09 /* AppDelegate.m in Sources */,
 				8CA9E2E4195E52B800930C09 /* main.m in Sources */,
+				8C62DB7E196138B90068AAF2 /* statusViewController.m in Sources */,
+				8CA9E30D195E52E900930C09 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +477,7 @@
 				8CA9E306195E52B800930C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CA9E307195E52B800930C09 /* Build configuration list for PBXNativeTarget "HW2Tests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +486,7 @@
 				8CA9E309195E52B800930C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
