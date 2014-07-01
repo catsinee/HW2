@@ -8,10 +8,14 @@
 
 #import "FeedViewController.h"
 #import "statusViewController.h"
+#import "MoreViewController.h"
 
 @interface FeedViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *leftButtonImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *feedView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
+
+
 - (IBAction)statusButton:(id)sender;
 - (void)loadFeed;
 @end
@@ -40,7 +44,17 @@
     UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     indicatorView.center = self.view.center;
     
+    UIImage *leftButtonImage = [[UIImage imageNamed:@"ico_search"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithImage:leftButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(onLeftButton)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+    
+    
     [self.view addSubview:indicatorView];
+    
+}
+
+-(void)onLeftButton
+{
     
 }
 

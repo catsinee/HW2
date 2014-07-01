@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 #import "FeedViewController.h"
+#import "MoreViewController.h"
+#import "statusViewController.h"
 
 @interface MainViewController ()
 - (IBAction)onTab:(id)sender;
@@ -132,7 +134,7 @@
     
     [self.view endEditing:YES];
     
-     [self.loginButtonView setBackgroundImage:[UIImage imageNamed:@"logging_in_button"] forState:UIControlStateNormal];
+    [self.loginButtonView setImage:[UIImage imageNamed:@"logging_in_button"] forState:UIControlStateNormal];
      
     [self.indicatorView startAnimating];
     
@@ -141,29 +143,62 @@
     UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     indicatorView.center = self.view.center;
     
-    [self.view addSubview:indicatorView];    }
+    [self.view addSubview:indicatorView];
+    
+    
+    
+
+}
     
 - (void) loadCondition
     {
         [self.indicatorView stopAnimating];
+        
+        
         [self.loginButtonView setBackgroundImage:[UIImage imageNamed:@"login_button_disabled"] forState:UIControlStateNormal];
         
         if ([self.passwordTextField.text isEqualToString:@"password"] && [self.emailTextField.text isEqualToString:@"username"]) {
             
-            UIViewController *vc = [[FeedViewController alloc] init];
-            vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             
-            [self presentViewController:vc animated:YES completion:nil];
+            UIViewController *fvc = [[FeedViewController alloc] init];
+            UIViewController *mvc = [[MoreViewController alloc] init];
+            
+            UINavigationController *fnc = [[UINavigationController alloc] initWithRootViewController:fvc];
+            fnc.navigationBar.barTintColor = [UIColor colorWithRed:.23 green:.35 blue:.60 alpha:1];
+            fnc.navigationBar.tintColor = [UIColor whiteColor];
+            
+            NSShadow *shadow = [[NSShadow alloc] init];
+            
+            NSDictionary *titleTextAttributes =
+            @{
+              NSFontAttributeName : [UIFont boldSystemFontOfSize:16],
+              NSForegroundColorAttributeName : [UIColor whiteColor],
+              NSShadowAttributeName : shadow
+              };
+            fnc.navigationBar.titleTextAttributes = titleTextAttributes;
+
+            
+            fvc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            
+            fnc.tabBarItem.title = @"News Feed";
+            fnc.tabBarItem.image = [UIImage imageNamed:@"tab_feed"];
+            mvc.tabBarItem.title = @"More";
+            mvc.tabBarItem.image = [UIImage imageNamed:@"tab_more"];
+            
+            UITabBarController *tabBarController = [[UITabBarController alloc] init];
+            tabBarController.viewControllers = @[fnc,mvc];
+            
+            [self presentViewController:tabBarController animated:YES completion:nil];
+            
             
         }
         
         else {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Wrong email or password" message:@"Please try enter your email and password again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alertView show];
-            
-            
-        }
 
+        }
+        
 
 }
 
@@ -177,13 +212,11 @@
     
     
    if ([self.passwordTextField.text isEqualToString:@""] || [self.emailTextField.text isEqualToString:@""]){
-        self.loginButtonView.enabled = NO;
-       self.loginButtonView.alpha = 0.5;
+       self.loginButtonView.enabled = NO;
     
     }
    else{
        self.loginButtonView.enabled = YES;
-       self.loginButtonView.alpha =1;
    }
 }
 

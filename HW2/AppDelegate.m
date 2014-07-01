@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "FeedViewController.h"
 #import "statusViewController.h"
+#import "MoreViewController.h"
 
 @implementation AppDelegate
 

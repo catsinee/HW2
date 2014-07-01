@@ -1,22 +1,18 @@
 //
-//  statusViewController.m
+//  MoreViewController.m
 //  HW2
 //
-//  Created by Kansinee Adsanatham on 6/29/14.
+//  Created by Kansinee Adsanatham on 6/30/14.
 //  Copyright (c) 2014 kansinee. All rights reserved.
 //
 
-#import "statusViewController.h"
-#import "FeedViewController.h"
+#import "MoreViewController.h"
 
-@interface statusViewController ()
-- (IBAction)cancelButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextField *statusTextField;
-- (IBAction)statusTextField:(id)sender ;
+@interface MoreViewController ()
 
 @end
 
-@implementation statusViewController
+@implementation MoreViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,7 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-      [self.statusTextField becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,11 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)statusTextField:(id)sender {
-    
-}
-- (IBAction)cancelButton:(id)sender {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 @end

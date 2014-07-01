@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3DBD531962260100C5116A /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3DBD511962260100C5116A /* MoreViewController.m */; };
+		8C3DBD541962260100C5116A /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3DBD521962260100C5116A /* MoreViewController.xib */; };
 		8C62DB7E196138B90068AAF2 /* statusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C62DB7C196138B90068AAF2 /* statusViewController.m */; };
 		8C62DB7F196138B90068AAF2 /* statusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C62DB7D196138B90068AAF2 /* statusViewController.xib */; };
 		8CA9E2D6195E52B800930C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9E2D5195E52B800930C09 /* Foundation.framework */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C3DBD501962260100C5116A /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		8C3DBD511962260100C5116A /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		8C3DBD521962260100C5116A /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		8C62DB7B196138B90068AAF2 /* statusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statusViewController.h; sourceTree = "<group>"; };
 		8C62DB7C196138B90068AAF2 /* statusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = statusViewController.m; sourceTree = "<group>"; };
 		8C62DB7D196138B90068AAF2 /* statusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = statusViewController.xib; sourceTree = "<group>"; };
@@ -144,6 +149,9 @@
 				8C62DB7B196138B90068AAF2 /* statusViewController.h */,
 				8C62DB7C196138B90068AAF2 /* statusViewController.m */,
 				8C62DB7D196138B90068AAF2 /* statusViewController.xib */,
+				8C3DBD501962260100C5116A /* MoreViewController.h */,
+				8C3DBD511962260100C5116A /* MoreViewController.m */,
+				8C3DBD521962260100C5116A /* MoreViewController.xib */,
 			);
 			path = HW2;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA9E2E2195E52B800930C09 /* InfoPlist.strings in Resources */,
+				8C3DBD541962260100C5116A /* MoreViewController.xib in Resources */,
 				8C62DB7F196138B90068AAF2 /* statusViewController.xib in Resources */,
 				8CA9E30E195E52E900930C09 /* MainViewController.xib in Resources */,
 				8CA9E313195E58AD00930C09 /* FeedViewController.xib in Resources */,
@@ -280,6 +289,7 @@
 				8CA9E2E8195E52B800930C09 /* AppDelegate.m in Sources */,
 				8CA9E2E4195E52B800930C09 /* main.m in Sources */,
 				8C62DB7E196138B90068AAF2 /* statusViewController.m in Sources */,
+				8C3DBD531962260100C5116A /* MoreViewController.m in Sources */,
 				8CA9E30D195E52E900930C09 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
